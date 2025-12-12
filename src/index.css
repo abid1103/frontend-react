@@ -1,0 +1,45 @@
+/* src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Theme variables used by layout */
+:root{
+  --bg-app: #f3f4f6;
+  --sidebar-bg: #1e293b;   /* slate-800 */
+  --header-bg: var(--sidebar-bg);
+  --text-sidebar: #e6eef8;
+  --accent: #2563eb;
+}
+
+.dark {
+  --bg-app: #071022;
+  --sidebar-bg: #0b1220;
+  --header-bg: var(--sidebar-bg);
+  --text-sidebar: #e2e8f0;
+  --accent: #60a5fa;
+}
+
+body {
+  background-color: var(--bg-app);
+}
+
+/* helpers */
+.sidebar {
+  background-color: var(--sidebar-bg);
+  color: var(--text-sidebar);
+}
+
+.header {
+  background-color: var(--header-bg);
+  color: var(--text-sidebar);
+}
+
+/* small focus style */
+button:focus {
+  outline: 2px solid rgba(99,102,241,0.2);
+  outline-offset: 2px;
+}
+
+/* dropdown overflow hidden */
+.dropdown-clip { overflow: hidden; }

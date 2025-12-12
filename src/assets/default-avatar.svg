@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg
+    width="128"
+    height="128"
+    viewBox="0 0 24 24"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+>
+    <circle cx="12" cy="12" r="10" fill="#E5E7EB"/>
+    <circle cx="12" cy="10" r="3.5" fill="#9CA3AF"/>
+    <path
+        fill="#9CA3AF"
+        d="M12 14c-3 0-5.5 2-5.5 4.5v.5h11v-.5c0-2.5-2.5-4.5-5.5-4.5z"
+    />
+</svg>
