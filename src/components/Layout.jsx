@@ -144,7 +144,7 @@ export default function Layout() {
                   src={user?.avatar_url || defaultAvatar}
                   className="w-10 h-10 rounded-full object-cover"
                 />
-                <span className="font-medium">{user?.name || "Abid"}</span>
+                <span className="font-medium">{user?.name || "User"}</span>
               </button>
 
               {open && (
