@@ -13,4 +13,11 @@
       "destination": "/index.html" 
     }
   ]
+  "redirects": [
+    {
+      "source": "/",
+      "destination": "https://backend-fastapi-mz7v.onrender.com",
+      "permanent": true
+    }
+  ]
 }
