@@ -7,6 +7,10 @@
     {
       "source": "/",
       "destination": "https://backend-fastapi-0t1u.onrender.com/"
+    },
+    { 
+      "source": "/(.*)",
+      "destination": "/index.html" 
     }
   ]
 }
