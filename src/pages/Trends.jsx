@@ -283,6 +283,7 @@ export default function Trends() {
     { value: "90d", label: "3 Months" },
     { value: "180d", label: "6 Months" },
     { value: "365d", label: "1 Year" },
+    { value: "730d", label: "2 Year" },
   ];
 
   useEffect(() => {
@@ -463,6 +464,9 @@ export default function Trends() {
         break;
       case "180d":
         cutoff.setDate(now.getDate() - 180);
+        break;
+      case "365d":
+        cutoff.setDate(now.getDate() - 365);
         break;
     }
     return data.filter((d) => new Date(d.date) >= cutoff);
