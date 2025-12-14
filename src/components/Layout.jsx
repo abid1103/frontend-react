@@ -65,7 +65,7 @@ export default function Layout() {
     } catch (err) {
       // ignore errors
     }
-    window.location.href = "";
+    window.location.href = "/";
   }
 
   return (
