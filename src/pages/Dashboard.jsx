@@ -21,19 +21,19 @@ export default function Dashboard() {
       title: "Trend Analysis",
       description: "Track search interest patterns and market direction",
       icon: TrendingUp,
-      path: "/trends",
+      path: "/dashboard/trends",
     },
     {
       title: "Sentiment Analysis",
       description: "Evaluate public emotions and opinions across sources",
       icon: MessageSquare,
-      path: "/sentiment",
+      path: "/dashboard/sentiment",
     },
     {
       title: "Market Forecast",
       description: "Predict future behavior using AI-based forecasting",
       icon: BarChart3,
-      path: "/forecast",
+      path: "/dashboard/forecast",
     }
   ];
 
