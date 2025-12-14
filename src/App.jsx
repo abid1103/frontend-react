@@ -7,6 +7,7 @@ import Sentiment from "./pages/Sentiment";
 import Forecast from "./pages/Forecast";
 import Settings from "./pages/Settings"; // NEW
 import Profile from "./pages/Profile";   // NEW
+import index from "./pages/index";
 import Recommendations from "./pages/Recommendations";
 import AdminLogin from "./pages/AdminLogin";
 import AdminDashboard from "./pages/AdminDashboard";
@@ -25,7 +26,7 @@ export default function App() {
           <Route path="profile" element={<Profile />} />   {/* Profile-only page */}
           <Route path="Recommendations" element={<Recommendations />} />
         </Route>
-
+          <Route path="/" element={<index />} />
           <Route path="AdminLogin" element={<AdminLogin />} />
           <Route path="AdminDashboard" element={<AdminDashboard />} />
       </Routes>
