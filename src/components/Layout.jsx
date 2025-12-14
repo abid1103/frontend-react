@@ -52,9 +52,9 @@ export default function Layout() {
 
   const navItems = [
     { name: "Dashboard", path: "/dashboard", icon: <LayoutDashboard /> },
-    { name: "Trends", path: "/trends", icon: <TrendingUp /> },
-    { name: "Sentiment", path: "/sentiment", icon: <MessageCircle /> },
-    { name: "Forecast", path: "/forecast", icon: <LineChart /> },
+    { name: "Trends", path: "/dashboard/trends", icon: <TrendingUp /> },
+    { name: "Sentiment", path: "/dashboard/sentiment", icon: <MessageCircle /> },
+    { name: "Forecast", path: "/dashboard/forecast", icon: <LineChart /> },
   ];
 
   async function handleLogout() {
