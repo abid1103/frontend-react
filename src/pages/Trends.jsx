@@ -276,13 +276,14 @@ export default function Trends() {
   const [recentDropdownOpen, setRecentDropdownOpen] = useState([-1, -1, -1]);
 
   const containerRef = useRef(null);
-
+  
   const timeRanges = [
     { value: "7d", label: "7 Days" },
     { value: "30d", label: "30 Days" },
     { value: "90d", label: "3 Months" },
     { value: "180d", label: "6 Months" },
-    { value: "365d", label: "2 Year" },
+    { value: "365d", label: "1 Year" },
+    { value: "720d", label: "2 Year" },
   ];
 
   useEffect(() => {
@@ -446,34 +447,30 @@ export default function Trends() {
     });
   };
 
-const filterDataByTimeRange = (data, range) => {
-  if (!data?.length) return [];
-
-  const now = new Date();
-  const cutoff = new Date();
-
-  switch (range) {
-    case "7d":
-      cutoff.setDate(now.getDate() - 7);
-      break;
-    case "30d":
-      cutoff.setDate(now.getDate() - 30);
-      break;
-    case "90d":
-      cutoff.setDate(now.getDate() - 90);
-      break;
-    case "180d":
-      cutoff.setDate(now.getDate() - 180);
-      break;
-    case "365d":
-      cutoff.setDate(now.getDate() - 365);
-      break;
-    default:
-      return data; // fallback safety
-  }
-
-  return data.filter(d => new Date(d.date) >= cutoff);
-};
+  const filterDataByTimeRange = (data, range) => {
+    if (!data?.length) return [];
+    if (range === "720d") return data;
+    const now = new Date();
+    const cutoff = new Date();
+    switch (range) {
+      case "7d":
+        cutoff.setDate(now.getDate() - 7);
+        break;
+      case "30d":
+        cutoff.setDate(now.getDate() - 30);
+        break;
+      case "90d":
+        cutoff.setDate(now.getDate() - 90);
+        break;
+      case "180d":
+        cutoff.setDate(now.getDate() - 180);
+        break;
+      case "365d":
+        cutoff.setDate(now.getDate() - 365);
+        break;
+    }
+    return data.filter((d) => new Date(d.date) >= cutoff);
+  };
 
 
   const getChartForKw = (kw) => {
