@@ -139,7 +139,7 @@ export default function AdminLogin() {
 
         {/* Back to Landing Page Button */}
         <button
-          onClick={() => {window.location.href = "http://localhost:8000/static/landing/index.html";}}
+          onClick={() => {window.location.href = "/";}}
           className="fixed bottom-6 left-6 flex items-center gap-2 bg-white text-gray-800 border border-gray-300 px-4 py-2 rounded-xl shadow-lg hover:bg-gray-100 transition-all duration-200"
         >
           <svg
