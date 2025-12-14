@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://backend-fastapi-0t1u.onrender.com/api/$1"
+      "destination": "https://backend-fastapi-mz7v.onrender.com/api/$1"
     },
     {
       "source": "/",
-      "destination": "https://backend-fastapi-0t1u.onrender.com/"
+      "destination": "https://backend-fastapi-mz7v.onrender.com/"
     },
     { 
       "source": "/(.*)",
