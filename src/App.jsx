@@ -16,7 +16,7 @@ export default function App() {
     <BrowserRouter>
       <Routes>
         {/* Use Layout for all pages */}
-        <Route path="/" element={<Layout />}>
+        <Route path="/dashboard" element={<Layout />}>
           <Route index element={<Dashboard />} />
           <Route path="trends" element={<Trends />} />
           <Route path="sentiment" element={<Sentiment />} />
