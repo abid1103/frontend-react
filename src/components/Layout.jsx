@@ -65,7 +65,7 @@ export default function Layout() {
     } catch (err) {
       // ignore errors
     }
-    window.location.href = "http://localhost:8000/static/landing/login.html";
+    window.location.href = "";
   }
 
   return (
