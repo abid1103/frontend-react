@@ -283,7 +283,7 @@ export default function Trends() {
     { value: "90d", label: "3 Months" },
     { value: "180d", label: "6 Months" },
     { value: "365d", label: "1 Year" },
-    { value: "730d", label: "2 Year" },
+    { value: "710d", label: "2 Year" },
   ];
 
   useEffect(() => {
@@ -469,8 +469,8 @@ const filterDataByTimeRange = (data, range) => {
     case "365d":
       cutoff.setDate(now.getDate() - 365);
       break;
-    case "730d":
-      cutoff.setDate(now.getDate() - 730);
+    case "710d":
+      cutoff.setDate(now.getDate() - 710);
       break;
     default:
       return data; // fallback safety
