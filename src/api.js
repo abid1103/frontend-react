@@ -28,6 +28,21 @@ export const getSentimentInsights = (keyword) =>
 export const forecastTrends = (keyword) =>
   API.get(`/api/forecast-google-trends/${keyword}`);
 
+export const getRecommendationsBatch = async () => {
+  const res = await axios.get(`${API_BASE}/api/recommendations/batch`);
+  return res.data;
+};
+
+export const listRecommendations = async () => {
+  const res = await axios.get(`${API_BASE}/api/recommendations/list`);
+  return res.data;
+};
+
+export const downloadRecommendationsCSV = async () => {
+  const res = await axios.get(`${API_BASE}/api/recommendations/download`);
+  return res.data;
+};
+
 // AUTH
 export const apiLogin = (payload) => API.post("/api/login", payload);
 export const apiLogout = () => API.post("/api/logout");
