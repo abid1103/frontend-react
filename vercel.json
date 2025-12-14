@@ -4,6 +4,10 @@
       "source": "/api/(.*)",
       "destination": "https://backend-fastapi-mz7v.onrender.com/api/$1"
     }
+    { 
+      "source": "/(.*)", 
+      "destination": "/index.html" 
+    }
   ],
   "redirects": [
     {
